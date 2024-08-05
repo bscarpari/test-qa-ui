@@ -3,11 +3,11 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 !allure-results/environment.properties
-!allure-report/history/categories-trend.json
+allure-results/*
+allure-report/*
 
 ### IDE ###
-.idea/
-idea/
+.idea/*
 .idea
 .vscode
 .idea/modules.xml
