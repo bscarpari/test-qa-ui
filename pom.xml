@@ -9,19 +9,22 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <junit.version>4.13.2</junit.version>
-        <selenium.version>3.7.0</selenium.version>
+        <junit.version>5.10.2</junit.version>
+        <selenium.version>4.23.0</selenium.version>
         <lombok.version>1.18.22</lombok.version>
         <jackson.version>2.10.1</jackson.version>
         <javafaker.version>1.0.2</javafaker.version>
-        <allure-junit4.version>2.19.0</allure-junit4.version>
+        <allure-junit.version>2.24.0</allure-junit.version>
         <allure-selenide.version>2.18.1</allure-selenide.version>
         <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
         <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
-        <aspectj.version>1.9.4</aspectj.version>
+        <aspectj.version>1.9.21</aspectj.version>
+        <allure.version>2.25.0</allure.version>
+        <testng.version>7.0.0</testng.version>
+        <slf4j.version>2.0.13</slf4j.version>
     </properties>
 
     <dependencies>
@@ -32,19 +35,20 @@
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
-            <artifactId>allure-junit4</artifactId>
-            <version>${allure-junit4.version}</version>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure-junit.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.datatype</groupId>
             <artifactId>jackson-datatype-jsr310</artifactId>
-            <version>2.10.1</version>
+            <version>${jackson.version}</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -62,14 +66,43 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-simple</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
     </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-bom</artifactId>
+                <version>${allure.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.12.1</version>
+                <version>${maven-compiler-plugin.version}</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -90,7 +123,7 @@
                     <properties>
                         <property>
                             <name>listener</name>
-                            <value>io.qameta.allure.junit4.AllureJunit4</value>
+                            <value>io.qameta.allure.junit5.AllureJunit5</value>
                         </property>
                     </properties>
                     <reportFormat>plain</reportFormat>
