@@ -1,0 +1,56 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "br.tec.db.tests.test.LoginTest",
+    "children" : [ {
+      "name" : "C2 - Realizar Login",
+      "uid" : "256bb6bff5c52918",
+      "parentUid" : "358b02ab3a994d5707fd01634984496b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1722837881841,
+        "stop" : 1722837885304,
+        "duration" : 3463
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "358b02ab3a994d5707fd01634984496b"
+  }, {
+    "name" : "br.tec.db.tests.test.RegisterTest",
+    "children" : [ {
+      "name" : "C1 - Realizar Cadastro",
+      "uid" : "71f9d00c6e7c5f28",
+      "parentUid" : "1abc5e83e0a3193955d27e3ff862bc51",
+      "status" : "passed",
+      "time" : {
+        "start" : 1722837885373,
+        "stop" : 1722837888915,
+        "duration" : 3542
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1abc5e83e0a3193955d27e3ff862bc51"
+  }, {
+    "name" : "br.tec.db.tests.test.TransferenceTest",
+    "children" : [ {
+      "name" : "C3 - Realizar Transferência entre Contas",
+      "uid" : "e673b5e550fdc8bb",
+      "parentUid" : "d850e597b2221419f0d64f1eb3e2363c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1722837888920,
+        "stop" : 1722837888920,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "d850e597b2221419f0d64f1eb3e2363c"
+  } ]
+}

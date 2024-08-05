@@ -1,0 +1,75 @@
+{
+  "uid" : "256bb6bff5c52918",
+  "name" : "C2 - Realizar Login",
+  "fullName" : "br.tec.db.tests.test.LoginTest.verifyLoginWithValidData",
+  "historyId" : "b3bb6884f7e007d624a7c72ad1c836e0",
+  "time" : {
+    "start" : 1722837881841,
+    "stop" : 1722837885304,
+    "duration" : 3463
+  },
+  "description" : "Verifica se é possível realizar login com dados válidos",
+  "descriptionHtml" : "<p>Verifica se é possível realizar login com dados válidos</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "br.tec.db.tests.test"
+  }, {
+    "name" : "testClass",
+    "value" : "br.tec.db.tests.test.LoginTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "verifyLoginWithValidData"
+  }, {
+    "name" : "suite",
+    "value" : "br.tec.db.tests.test.LoginTest"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-11OO761"
+  }, {
+    "name" : "thread",
+    "value" : "28652@DESKTOP-11OO761.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "junit4"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "story",
+    "value" : "US002 - Login"
+  }, {
+    "name" : "feature",
+    "value" : "Login"
+  }, {
+    "name" : "epic",
+    "value" : "Autenticação"
+  }, {
+    "name" : "owner",
+    "value" : "Bruno Scarpari"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ {
+    "name" : "Website",
+    "url" : "https://bugbank.netlify.app/",
+    "type" : "custom"
+  } ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "owner" : "Bruno Scarpari",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "256bb6bff5c52918.json",
+  "parameterValues" : [ ]
+}

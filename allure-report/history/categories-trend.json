@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Ignored tests",
+    "messageRegex": ".*ignored.*",
+    "matchedStatuses": [
+      "skipped"
+    ]
+  },
+  {
+    "name": "Passed tests",
+    "messageRegex": ".*passed.*",
+    "matchedStatuses": [
+      "passed"
+    ]
+  },
+  {
+    "name": "Failed tests",
+    "messageRegex": ".*failed.*",
+    "matchedStatuses": [
+      "failed"
+    ]
+  },
+  {
+    "name": "Broken tests",
+    "messageRegex": ".*broken.*",
+    "matchedStatuses": [
+      "broken"
+    ]
+  },
+  {
+    "name": "Unknown tests",
+    "messageRegex": ".*unknown.*",
+    "matchedStatuses": [
+      "unknown"
+    ]
+  }
+]

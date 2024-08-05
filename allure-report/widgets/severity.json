@@ -1,0 +1,31 @@
+[ {
+  "uid" : "256bb6bff5c52918",
+  "name" : "C2 - Realizar Login",
+  "time" : {
+    "start" : 1722837881841,
+    "stop" : 1722837885304,
+    "duration" : 3463
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "71f9d00c6e7c5f28",
+  "name" : "C1 - Realizar Cadastro",
+  "time" : {
+    "start" : 1722837885373,
+    "stop" : 1722837888915,
+    "duration" : 3542
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e673b5e550fdc8bb",
+  "name" : "C3 - Realizar Transferência entre Contas",
+  "time" : {
+    "start" : 1722837888920,
+    "stop" : 1722837888920,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
