@@ -1,17 +1,16 @@
 <a name="readme-top"></a>
 
-# Desafio Técnico - API - QA
+# Desafio Técnico - UI - QA
 
 ![Intellij](https://img.shields.io/badge/Intellij-logo?style=flat-square&color=%23000000)
-![Java](https://img.shields.io/badge/Java-logo?style=flat-square&color=%23ED8B00)
+![Java](https://img.shields.io/badge/JAVA_17-logo?style=flat-square&color=%23FF7800)
 ![RestAssured](https://img.shields.io/badge/RestAssured-logo?style=flat-square&color=%234EA94B)
 ![Junit](https://img.shields.io/badge/Junit-logo?style=flat-square&color=%2314692E)
 ![Lombok](https://img.shields.io/badge/Lombok-logo?style=flat-square&color=grey)
 ![Allure](https://img.shields.io/badge/Allure-logo?style=flat-square&color=%23FF4500)
 
 Este projeto consiste em um desafio técnico para demonstrar conhecimentos acerca de Automação de Testes em UI. A
-aplicação de
-exemplo a ser utilizada é [BugBank](https://bugbank.netlify.app/).
+aplicação de exemplo a ser utilizada é [BugBank](https://bugbank.netlify.app/).
 
 ## Rodar o projeto localmente
 
@@ -21,8 +20,6 @@ exemplo a ser utilizada é [BugBank](https://bugbank.netlify.app/).
 git clone https://github.com/bscarpari/test-qa-ui.git
 ```
 
-a
-
 2. Entre na pasta criada
 
 ```ssh
@@ -31,10 +28,10 @@ cd test-qa-ui
 
 3. Abra o projeto na IDE IntelliJ
 
-4. Certifique de configurar o SDK do projeto para Java 8 (1.8)
+4. Certifique de configurar o SDK do projeto para Java 17
 
 ```text
-File > Project Structure > Project > Project SDK > 1.8
+File > Project Structure > Project > Project SDK > 17
 ```
 
 5. Para rodar todos os testes de uma só vez:
@@ -77,7 +74,7 @@ instruções [aqui](https://docs.qameta.io/allure/)
 
 - [X] Cenário 1: Realizar cadastro
 - [X] Cenário 2: Realizar login
-- [ ] Cenário 3: Realizar transferência (OBS.: impedido)
+- [X] Cenário 3: Realizar transferência entre contas
 
 ## Licença
 
