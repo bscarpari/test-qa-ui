@@ -9,7 +9,7 @@ public class LoginData {
     public LoginDto loginWithFixedData() {
         LoginDto loginDto = new LoginDto();
         loginDto.setEmail("brunoomoraes686@gmail.com");
-        loginDto.setPassword("123456789");
+        loginDto.setPassword("123");
         return loginDto;
     }
 

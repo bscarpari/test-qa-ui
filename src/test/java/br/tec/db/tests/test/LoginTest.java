@@ -4,8 +4,8 @@ import br.tec.db.tests.data.dto.LoginDto;
 import br.tec.db.tests.data.factory.datafaker.LoginData;
 import br.tec.db.tests.page.LoginPage;
 import io.qameta.allure.*;
-import io.qameta.allure.junit4.DisplayName;
-import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
 @Owner("Bruno Scarpari")
 @Epic("Autenticação")

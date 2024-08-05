@@ -1,11 +1,17 @@
 package br.tec.db.tests.data.factory.seleniumfactory;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class Elements extends SeleniumFactory {
+    public static WebDriverWait wait;
+
     public static WebElement element(By by) {
         return driver.findElement(by);
     }
@@ -30,5 +36,9 @@ public class Elements extends SeleniumFactory {
                 System.out.println("Invalid interaction type");
                 break;
         }
+    }
+
+    public static void initialize(WebDriver driver, Duration timeoutInSeconds) {
+        wait = new WebDriverWait(driver, timeoutInSeconds);
     }
 }

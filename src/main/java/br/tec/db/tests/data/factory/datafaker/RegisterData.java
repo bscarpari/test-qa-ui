@@ -4,9 +4,9 @@ import br.tec.db.tests.data.dto.RegisterDTO;
 import br.tec.db.tests.utils.DataFakerGenerator;
 
 public class RegisterData {
-    DataFakerGenerator dataFakerGenerator = new DataFakerGenerator();
+    static DataFakerGenerator dataFakerGenerator = new DataFakerGenerator();
 
-    public RegisterDTO registerValidData(boolean withBalance) {
+    public static RegisterDTO registerValidData(boolean withBalance) {
         RegisterDTO registerDTO = new RegisterDTO();
 
         registerDTO.setEmail(dataFakerGenerator.emailFaker());
@@ -22,13 +22,13 @@ public class RegisterData {
         return registerDTO;
     }
 
-    public RegisterDTO registerWithFixedData(boolean withBalance) {
+    public static RegisterDTO registerWithFixedData(boolean withBalance) {
         RegisterDTO registerDTO = new RegisterDTO();
 
         registerDTO.setEmail("brunoomoraes686@gmail.com");
         registerDTO.setName("Bruno Scarpari");
-        registerDTO.setPassword("123456789");
-        registerDTO.setPasswordConfirmation("123456789");
+        registerDTO.setPassword("123");
+        registerDTO.setPasswordConfirmation("123");
 
         if (!withBalance) registerDTO.setToggleAddBalance(false);
 
