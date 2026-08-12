@@ -1,0 +1,4 @@
+"BROKEN","EPIC","FAILED","FEATURE","PASSED","SKIPPED","STORY","UNKNOWN"
+"0","Autenticação","0","Login","1","0","US002 - Login","0"
+"0","Autenticação","0","Registro","1","0","US001 - Cadastro","0"
+"0","Transferência","0","Transferência bancária","1","0","US003 - Transferência entre contas","0"

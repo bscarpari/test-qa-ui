@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Verifica se é possível realizar login com dados válidos","214","C2 - Realizar Login","","2026-08-11","passed","2026-08-11","","br.tec.db.tests.test.LoginTest","br.tec.db.tests.test.LoginTest","verifyLoginWithValidData"
+"Verifica se um usuário pode se registrar com dados válidos","1506","C1 - Realizar Cadastro","","2026-08-11","passed","2026-08-11","","br.tec.db.tests.test.RegisterTest","br.tec.db.tests.test.RegisterTest","validateRegisterValidData"
+"Verifica se é possível realizar transferência entre contas depois de criar 2 usuários como massa de dados","5519","C3 - Realizar Transferência entre Contas","","2026-08-11","passed","2026-08-11","","br.tec.db.tests.test.TransferenceTest","br.tec.db.tests.test.TransferenceTest","makeATransferenceToOtherPerson"

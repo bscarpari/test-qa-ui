@@ -12,6 +12,12 @@
 Este projeto consiste em um desafio técnico para demonstrar conhecimentos acerca de Automação de Testes em UI. A
 aplicação de exemplo a ser utilizada é [BugBank](https://bugbank.netlify.app/).
 
+### Preview do relatório Allure
+
+![Allure Report Preview](docs/allure-report-preview.png)
+
+O relatório completo (HTML) está disponível em [`docs/allure-report`](docs/allure-report/index.html).
+
 ## Rodar o projeto localmente
 
 1. Clone o repositorio

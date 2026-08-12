@@ -20,7 +20,7 @@
         <allure-junit.version>2.24.0</allure-junit.version>
         <allure-selenide.version>2.18.1</allure-selenide.version>
         <maven-compiler-plugin.version>3.12.1</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>2.20</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
         <aspectj.version>1.9.21</aspectj.version>
         <allure.version>2.25.0</allure.version>
         <testng.version>7.0.0</testng.version>
@@ -47,6 +47,12 @@
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
