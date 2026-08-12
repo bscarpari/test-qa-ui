@@ -1,83 +1,153 @@
 <a name="readme-top"></a>
 
-# Desafio Técnico - UI - QA
+<img alt="Header" width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7B61FF&height=180&section=header&text=UI%20Test%20Automation&fontSize=38&fontColor=ffffff&fontAlignY=32&desc=Java%2017%20%C2%B7%20Selenium%20%C2%B7%20JUnit%20%C2%B7%20Allure&descAlignY=52&descSize=16"/>
 
-![Intellij](https://img.shields.io/badge/Intellij-logo?style=flat-square&color=%23000000)
-![Java](https://img.shields.io/badge/JAVA_17-logo?style=flat-square&color=%23FF7800)
-![RestAssured](https://img.shields.io/badge/RestAssured-logo?style=flat-square&color=%234EA94B)
-![Junit](https://img.shields.io/badge/Junit-logo?style=flat-square&color=%2314692E)
-![Lombok](https://img.shields.io/badge/Lombok-logo?style=flat-square&color=grey)
-![Allure](https://img.shields.io/badge/Allure-logo?style=flat-square&color=%23FF4500)
+<h3 align="center">Automated UI testing on a banking web application</h3>
 
-Este projeto consiste em um desafio técnico para demonstrar conhecimentos acerca de Automação de Testes em UI. A
-aplicação de exemplo a ser utilizada é [BugBank](https://bugbank.netlify.app/).
+<p align="center">
+  <a href="https://www.linkedin.com/in/bscarpari/">
+    <img alt="Made by" src="https://img.shields.io/badge/-Bruno%20Scarpari-blue?style=flat-square&logo=Linkedin&logoColor=white">
+  </a>
 
-## Rodar o projeto localmente
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/bscarpari/test-qa-ui?style=flat-square">
 
-1. Clone o repositorio
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/bscarpari/test-qa-ui?style=flat-square">
 
-```ssh
+  <a href="https://github.com/bscarpari/test-qa-ui/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/bscarpari/test-qa-ui?style=flat-square">
+  </a>
+
+  <img alt="License" src="https://img.shields.io/github/license/bscarpari/test-qa-ui?style=flat-square">
+</p>
+
+<p align="center">
+  <a href="#-about">About</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-technologies">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-coverage">Coverage</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-getting-started">Getting started</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-reports">Reports</a>
+</p>
+
+<!-- PLACEHOLDER: screenshot do relatório Allure
+     docs/allure.png -->
+<!-- <img alt="Allure report" width="100%" src="https://raw.githubusercontent.com/bscarpari/test-qa-ui/main/docs/allure.png"> -->
+
+---
+
+## 🌐 About
+
+Automated end-to-end UI test suite for [BugBank](https://bugbank.netlify.app/), a demo banking application built to contain realistic defects.
+
+The suite covers the core user journey — account registration, authentication and money transfer between accounts — and publishes results as an **Allure report** with step-level detail.
+
+<sub>Originally solved as a technical challenge.</sub>
+
+---
+
+## 🚀 Technologies
+
+<!-- PLACEHOLDER CRÍTICO: confirmar a ferramenta de UI real do projeto.
+     Se for Selenide ou Playwright Java, troque a badge e a linha abaixo. -->
+![Java](https://img.shields.io/badge/Java%2017-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=for-the-badge&logo=selenium&logoColor=white)
+![JUnit](https://img.shields.io/badge/JUnit-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Allure](https://img.shields.io/badge/Allure-FF4500?style=for-the-badge&logo=qameta&logoColor=white)
+![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![Lombok](https://img.shields.io/badge/Lombok-BC0000?style=for-the-badge&logo=java&logoColor=white)
+
+- **Java 17** — language and runtime
+- **Selenium** — browser automation and element interaction
+- **JUnit** — test lifecycle and assertions
+- **Allure** — rich reporting with steps, attachments and execution history
+- **Lombok** — boilerplate reduction in page objects and models
+- **Maven** — build and test execution
+
+---
+
+## 🧪 Coverage
+
+| Scenario | Description |
+|----------|-------------|
+| Account registration | Creates a new account and asserts the confirmation feedback |
+| Login | Authenticates with the registered credentials and reaches the dashboard |
+| Transfer between accounts | Moves funds between two accounts and validates the resulting balance |
+
+<!-- PLACEHOLDER: cenários que valem adicionar — cada um vira uma linha acima.
+     - Login com credenciais inválidas → mensagem de erro
+     - Registro com e-mail já existente
+     - Transferência com saldo insuficiente
+     - Transferência para conta inexistente
+     BugBank foi construído com bugs propositais: encontrar e cobrir um deles
+     é o cenário mais impressionante que você pode adicionar aqui. -->
+
+---
+
+## 💻 Getting started
+
+**Requirements**
+
+| Tool | Version |
+|------|---------|
+| Java (JDK) | 17 |
+| Maven | 3.8+ |
+| Allure CLI | [installation guide](https://docs.qameta.io/allure/) |
+
+**1. Clone the repository**
+
+```bash
 git clone https://github.com/bscarpari/test-qa-ui.git
+cd test-qa-ui
 ```
 
-2. Entre na pasta criada
+**2. Open the project in IntelliJ IDEA**
 
-```ssh
-cd test-qa-ui
-``` 
-
-3. Abra o projeto na IDE IntelliJ
-
-4. Certifique de configurar o SDK do projeto para Java 17
+**3. Set the project SDK to Java 17**
 
 ```text
 File > Project Structure > Project > Project SDK > 17
 ```
 
-5. Para rodar todos os testes de uma só vez:
+**4. Run the tests**
 
-```text
-a. Acesse a dependência lateral direita "Maven"
-b. Abra o Lifecycle
-c. Execute o comando "test"
+Via terminal:
+
+```bash
+mvn test
 ```
 
-**OBS.:** execute todos os testes para depois gerar o relatório
-
-6. Para gerar e visualizar o relatório de cobertura de testes:
+Or through the IDE:
 
 ```text
-1. Acesse o terminal da IDE
-2. Execute o comando "allure generate --clean"
-3. Execute o comando "allure open"
+Maven panel (right sidebar) > Lifecycle > test
 ```
 
-**OBS.:** precisa ter o Allure instalado na máquina. Caso não tenha, siga as
-instruções [aqui](https://docs.qameta.io/allure/)
+---
 
-## Responsável
+## 📊 Reports
 
-<table>
-    <tr>
-      <td align="center">
-        <a href="https://github.com/bscarpari">
-          <img src="https://avatars.githubusercontent.com/u/53575457?v=4" width="100px;" /><br>
-          <sub>
-            <b>Bruno Scarpari</b>
-          </sub>
-        </a>
-      </td>
-    </tr>
-</table>
+Run the full suite **before** generating the report — Allure builds it from the results of the last execution.
 
-## Cobertura de testes
+```bash
+allure generate --clean
+allure open
+```
 
-- [X] Cenário 1: Realizar cadastro
-- [X] Cenário 2: Realizar login
-- [X] Cenário 3: Realizar transferência entre contas
+Requires the Allure CLI installed locally. Follow the [official instructions](https://docs.qameta.io/allure/) if you don't have it.
 
-## Licença
+---
+
+## 📄 License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
-<p align="right">(<a href="#readme-top">voltar para o topo</a>)</p>
+---
+
+<p align="center">
+  Made with 💜 by <a href="https://www.linkedin.com/in/bscarpari/">Bruno Scarpari</a> ·
+  <a href="https://github.com/bscarpari">GitHub</a> ·
+  <a href="mailto:bscarpari.dev@gmail.com">Email</a>
+</p>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<img alt="Footer" width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=7B61FF&height=100&section=footer"/>
